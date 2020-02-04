@@ -1,0 +1,42 @@
+body{
+    background-color: teal;
+}
+
+.heading{
+    text-align: center;
+}
+
+.content{
+    border-collapse: collapse;
+    /*margin: 50px 0;*/
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    margin-left: 27%;
+}
+
+.content thead tr{
+    background-color: lightblue;
+    text-align: left;
+    font-weight: bold;
+    
+
+}
+
+.content th, td{
+    padding: 15px;
+}
+
+.content tbody, tr{
+    border-bottom: 1px lightgray;
+}
+
+.content tbody tr:nth-of-type(even){
+    background-color: lightgray;
+}
+
+.heading{
+    font-weight: bolder;
+    font-size: larger;
+}
