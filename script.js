@@ -17,9 +17,7 @@
         } else {
             console.log('anything can happen');
       };
-
     });
-
 
 
         //making the buttons work
@@ -47,10 +45,7 @@
                     = result; 
         
                     
-    
-
         }
-
 
         function addD(){
             //add or append W to the form of this particular team
