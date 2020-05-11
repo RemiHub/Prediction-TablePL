@@ -18,8 +18,8 @@
             <tr>
                 <th id="position-no">Position</th>
                 <th id="team">Team Name</th>
-                <th id="form">Form</th>
                 <th id="prediction">Prediction</th>
+                <th id="form">form</th>
                 <th id="add-form">Latest Result</th>
                 
             </tr>
@@ -29,8 +29,33 @@
             
             <td></td>
             <td class="team-name" id="a1">Arsenal</td>
-            <td class="team-form">DDLWD</td>
-            <td class="pred"></td>
+            <td class="team-form">WWWWW</td>
+            <td class="tf" id="pred1">WWWWW</td>
+            <td><button class='win-btn' type="button">W</button>
+                <button class='lose-btn' type="button">L</button>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="reset">Back</button></td>
+            
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td class="team-name" id="a2">Aston Villa</td>
+            <td class="team-form">LWLWL</td>
+            <td class="tf" id="pred2">LWLWL</td>
+            <td><button class='win-btn' type="button">W</button>
+                <button class='lose-btn' type="button">L</button>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
+            
+        </tr>
+        
+        
+        <tr>
+            <td></td>
+            <td class="team-name" id="b1">Bournemouth</td>
+            <td class="team-form">LDLLL</td>
+            <td class="tf" id="pred3">LDLLL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
                 <button class='draw-btn' type="button">D</button>
@@ -40,35 +65,13 @@
         
         <tr>
             <td></td>
-            <td class="team-name" id="a2">Aston Villa</td>
-            <td class="team-form">LWLWL</td>
-            <td class="pred"></td>
-            <td><button class='win-btn' type="button">W</button>
-                <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
-            
-        </tr>
-        
-        
-        <tr>
-            <td></td>
-            <td class="team-name" id="b1">Bournemouth</td>
-            <td class="team-form">LDLLL</td>
-            <td class="pred"></td>
-            <td><button class='win-btn' type="button">W</button>
-                <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
-            
-        </tr>
-        
-        <tr>
-            <td></td>
             <td class="team-name" id="b2">Brighton</td>
             <td class="team-form">LLWDL</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred4">LLWDL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -76,10 +79,11 @@
             <td></td>
             <td class="team-name" id="b3">Burnley</td>
             <td class="team-form">WLLLL</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred5">WLLLL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -87,10 +91,11 @@
             <td></td>
             <td class="team-name" id="c1">Chelsea</td>
             <td class="team-form">WLWDW</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred6">WLWDW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -98,10 +103,11 @@
             <td></td>
             <td class="team-name" id="c2">Crystal Palace</td>
             <td class="team-form">LWDDD</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred7">LWDDD</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -109,10 +115,11 @@
             <td></td>
             <td class="team-name" id="e1">Everton</td>
             <td class="team-form">DWWLW</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred8">DWWLW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -120,21 +127,23 @@
             <td></td>
             <td class="team-name" id="l1">Leicester City</td>
             <td class="team-form">LLWWL</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred9" >LLWWL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
         <tr>
             <td></td>
             <td class="team-name" id="l2">Liverpool</td>
-            <td id='l2-form' class="team-form">WWWWL</td>
-            <td id="pred2"></td>
-            <td><button onclick="addW()" class='win-btn' type="button">W</button>
-                <button onclick="addL()" class='lose-btn' type="button">L</button>
-                <button onclick="addD()" class='draw-btn' type="button">D</button></td>
+            <td class="team-form">DLLLL</td>
+            <td id='l2-form' id="pred10">DLLLL</td>
+            <td><button class='win-btn' type="button" value="W">W</button>
+                <button class='lose-btn' type="button" value="L">L</button>
+                <button class='draw-btn' type="button" value="D">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -142,10 +151,11 @@
             <td></td>
             <td class="team-name" id="m1">Manchester City</td>
             <td class="team-form">WLWWW</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred11">WLWWW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -153,10 +163,11 @@
             <td></td>
             <td class="team-name" id="m2">Manchester United</td>
             <td class="team-form">LWWLW</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred12">LWWLW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -164,10 +175,11 @@
             <td></td>
             <td class="team-name" id="n1">Newcastle</td>
             <td class="team-form">WLLLD</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred13">WLLLD</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -175,10 +187,11 @@
             <td></td>
             <td class="team-name" id="n2">Norwich City</td>
             <td class="team-form">LLDDL</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred14">LLDDL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -186,10 +199,11 @@
             <td></td>
             <td class="team-name" id="s1">Sheffield United</td>
             <td class="team-form">WDLLW</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred15">WDLLW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -197,10 +211,11 @@
             <td></td>
             <td class="team-name" id="s2">Southampton</td>
             <td class="team-form">WWDWW</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred16">WWDWW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -208,10 +223,11 @@
             <td></td>
             <td class="team-name" id="t1">Tottenham Hotspur</td>
             <td class="team-form">LWDLL</td>
-            <td id="pred1"></td>
+            <td class="tf" id="pred17">LWDLL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -219,10 +235,11 @@
             <td></td>
             <td class="team-name" id="w1">Watford</td>
             <td class="team-form">WDWWW</td>
-            <td class="pred"></td>
-            <td><button onclick="addW()" class='win-btn' type="button">W</button>
+            <td id="w1-form" id="pred18">WDWWW</td>
+            <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -230,10 +247,11 @@
             <td></td>
             <td class="team-name" id="w2">West Ham United</td>
             <td class="team-form">WLLWL</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred19">WLLWL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         
@@ -241,16 +259,17 @@
             <td></td>
             <td class="team-name" id="w3">Wolves</td>
             <td class="team-form">WWLLD</td>
-            <td class="pred"></td>
+            <td class="tf" id="pred20">WWLLD</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
-                <button class='draw-btn' type="button">D</button></td>
+                <button class='draw-btn' type="button">D</button>
+                <button class='delete-btn' type="button">Back</button></td>
             
         </tr>
         </tbody>
 
     </table>
     
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

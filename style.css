@@ -2,26 +2,23 @@ body{
     background-color: teal;
 }
 
-.heading{
-    text-align: center;
-}
-
 .content{
     border-collapse: collapse;
-    /*margin: 50px 0;*/
     font-size: 1em;
-    min-width: 400px;
     border-radius: 5px 5px 0 0;
+    margin: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: center;
+    /* max-height: 100vh; */
     overflow: hidden;
-    margin-left: 27%;
 }
 
 .content thead tr{
     background-color: lightblue;
     text-align: left;
     font-weight: bold;
-    
-
 }
 
 .content th, td{
@@ -30,6 +27,7 @@ body{
 
 .content tbody, tr{
     border-bottom: 1px lightgray;
+    
 }
 
 .content tbody tr:nth-of-type(even){
@@ -39,4 +37,16 @@ body{
 .heading{
     font-weight: bolder;
     font-size: larger;
+    text-align: center;
 }
+
+button{
+    cursor: pointer;
+    font-size: 12px;
+    justify-content: space-evenly;
+}
+
+/* tr{
+    justify-content: space-evenly;
+    text-align: right;
+} */
