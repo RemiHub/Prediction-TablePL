@@ -1,10 +1,12 @@
 # Prediction-TablePL
 Premier League Predictor
 
-Hi I'm new here and new to Javascript. I need a little help with this project that im doing for leisure. 
+This project was created because my father wastes plenty of paper writing all this out for recreational purposes. 
 
-The table is set up however I would like an output to the prediction column from the matched regex in the if statement. it prints to the console and works, however i am unsure of how to output the results to the prediction column. i have played around with innerHTML but to no avail. 
+The main intention is to update the last score which appends to the form of the respective team and then update the prediction based on the form over last 5 games and recent input score.
 
-any help or direction is much appreciated.
+A few aspects left to add to the functionality in order to make it comprehensive. 
+
+previous query rectified, updates to follow
 
 thanks
