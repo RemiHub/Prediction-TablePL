@@ -23,68 +23,79 @@ var target20 = document.querySelector('#pred20');
 
 let teamPredictionText = [...teamForm];
 
-//whenever form changes new prediction is made
-//currently new prediction is exporting to console
-//need to put the text wihtin another element - teamForm element
-
-
-
-
 var observer = new MutationObserver(function(mutations) {
-    // console.log(mutations)
-         mutations.forEach(item => {
-            // console.log(item)
        
-            if(item.target.textContent.match(/(W{2,}$)+/gm )){
+    mutations.forEach(item => {
+       parent.addEventListener('click', e => {
 
-                parent.addEventListener('click', e => {
+       if(item.target.textContent.match(/(W{2,}$)+/gm )){
+           e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'draw or lose next game';
+       } 
+       else if(item.target.textContent.match(/(D{2,}$)+/gm )) {  
+           e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'win or lose next game';
+       } 
+       else if (item.target.textContent.match(/(L{2,}$)+/gm )){
+           e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'win or draw next game';
+       } 
+       else {
+           e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'anything can happen';
+           };
+       })
+   })
+});
+
+
+// var observer = new MutationObserver(function(mutations) {
+//     // console.log(mutations)
+//          mutations.forEach(item => {
+//             // console.log(item)
+       
+//             if(item.target.textContent.match(/(W{2,}$)+/gm )){
+
+//                 parent.addEventListener('click', e => {
                    
-        e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'draw or lose next game';
-            // let replaceWord = e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML.replace('/^\b\w+\b$/i', 'draw or lose next game');
-            // // console.log(replaceWord); 
-            // e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = replaceWord;
-            
-                    })
+//         e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'draw or lose next game';
+//                     })
                
 
-                console.log('draw or lose next game');
+//                 console.log('draw or lose next game');
             
-            } else if(item.target.textContent.match(/(D{2,}$)+/gm )) {  
+//             } else if(item.target.textContent.match(/(D{2,}$)+/gm )) {  
                 
-                parent.addEventListener('click', e => {
-                    console.log(e)
+//                 parent.addEventListener('click', e => {
+//                     console.log(e)
                
-                e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'win or lose next game';
+//                 e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'win or lose next game';
                 
-            })
-                console.log('win or lose next game');
+//             })
+//                 console.log('win or lose next game');
                 
-            } else if (item.target.textContent.match(/(L{2,}$)+/gm )){
+//             } else if (item.target.textContent.match(/(L{2,}$)+/gm )){
               
-                parent.addEventListener('click', e => {
+//                 parent.addEventListener('click', e => {
                
-                    e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'win or draw next game';
+//                     e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'win or draw next game';
                    
-                })
+//                 })
                 
 
-                console.log('win or draw next game');
+//                 console.log('win or draw next game');
                 
-            } else {
+//             } else {
                
 
-                parent.addEventListener('click', e => {
+//                 parent.addEventListener('click', e => {
                
-                    e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'anything can happen';
+//                     e.target.parentElement.previousElementSibling.previousElementSibling.innerHTML = 'anything can happen';
                    
-                })
+//                 })
 
 
-                console.log('anything can happen');
+//                 console.log('anything can happen');
                 
-          };
-        })
-    });
+//           };
+//         })
+//     });
  
 
     observer.observe(target1, {
