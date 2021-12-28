@@ -27,11 +27,11 @@
             <td></td>
             <td class="team-name" id="a1">Arsenal</td>
             <td class="team-form">WWWWW</td>
-            <td class="tf" id="pred1">WWWWW</td>
+            <td class="tf" name="predi" id="pred1">WWWWW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
                 <button class='draw-btn' type="button">D</button>
-                <button class='delete-btn' type="reset">Back</button></td>
+                <button class='delete-btn' onclick="undoButton(event)" type="button">Back</button></td>
             
         </tr>
         
@@ -43,7 +43,7 @@
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
                 <button class='draw-btn' type="button">D</button>
-                <button class='delete-btn' type="button">Back</button></td>
+                <button class='delete-btn' onclick="undoButton()" type="button">Back</button></td>
             
         </tr>
         
@@ -52,7 +52,7 @@
             <td></td>
             <td class="team-name" id="b1">Bournemouth</td>
             <td class="team-form">LDLLL</td>
-            <td class="tf" id="pred3">LDLLL</td>
+            <td class="tf"  id="pred3">LDLLL</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
                 <button class='draw-btn' type="button">D</button>
@@ -136,7 +136,7 @@
             <td></td>
             <td class="team-name" id="l2">Liverpool</td>
             <td class="team-form">DLLLL</td>
-            <td id='l2-form' id="pred10">DLLLL</td>
+            <td class='tf' id="pred10">DLLLL</td>
             <td><button class='win-btn' type="button" value="W">W</button>
                 <button class='lose-btn' type="button" value="L">L</button>
                 <button class='draw-btn' type="button" value="D">D</button>
@@ -232,7 +232,7 @@
             <td></td>
             <td class="team-name" id="w1">Watford</td>
             <td class="team-form">WDWWW</td>
-            <td id="w1-form" id="pred18">WDWWW</td>
+            <td class="tf" id="pred18">WDWWW</td>
             <td><button class='win-btn' type="button">W</button>
                 <button class='lose-btn' type="button">L</button>
                 <button class='draw-btn' type="button">D</button>
